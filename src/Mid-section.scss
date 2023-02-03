@@ -1,7 +1,42 @@
 .section{
-	max-width: 1000px;
+	max-width: 1500px;
 	min-height: fit-content;
-	background-color: aqua;
 	margin: 0 auto;
 	padding: 10px 40px;
+	display: flex;
+	flex-direction: column;
+	.img{
+		border-radius: 15px;
+		margin:  100px 0;
+
+	}
+	.img1{	
+		width: 70%;
+		height: 350px;
+		object-fit: none;
+		object-position: 50% -30px;
+	}
+	.img2{
+		width: 70%;
+		height: 500px;
+		object-fit: cover;
+		margin-left:  auto;
+	}
+	.img3{
+		width: 50%;
+		height: 170px;
+		margin-top: 100px;
+	}
+	.img4{
+		width: 50%;
+		height: 170px;
+		margin-top: 100px;
+		margin: 100px 0 0 auto;
+
+	}
+	.img5{
+		width: 50%;
+		height: 170px;
+		margin-top: 100px;
+	}
 }
