@@ -1,0 +1,12 @@
+.nav{
+	min-width: fit-content;
+	background-color: white;
+	ul{
+		min-width: fit-content;
+		display: flex;
+		list-style-type: none;
+		justify-content: space-around;
+		padding: 5px;
+		font-family: 'Montserrat', sans-serif;
+	}
+}

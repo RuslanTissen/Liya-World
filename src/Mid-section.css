@@ -1,0 +1,9 @@
+.section {
+  max-width: 1000px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  background-color: aqua;
+  margin: 0 auto;
+  padding: 10px 40px;
+}/*# sourceMappingURL=Mid-section.css.map */
