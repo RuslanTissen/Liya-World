@@ -1,5 +1,7 @@
 .section {
-  max-width: 1500px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
