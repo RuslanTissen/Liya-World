@@ -1,7 +1,7 @@
 import React from "react"
 import './Mid-section.scss'
-import img1 from '../src/images/clothes.png'
-import img2 from '../src/images/img-two.png'
+import img1 from '../../images/clothes.png'
+import img2 from '../../images/img-two.png'
 
 function MidSection() {
 	return (

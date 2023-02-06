@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import liya from '../src/images/liya.png'
+import liya from '../../../src/images/liya.png'
 
 function Header() {
 	return (

@@ -1,6 +1,6 @@
 import './App.scss';
-import Header from './Header.jsx';
-import MidSection from './Mid-section';
+import Header from './components/header/Header.jsx';
+import MidSection from './components/midle/Mid-section';
 
 
 function App() {
