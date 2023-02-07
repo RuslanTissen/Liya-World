@@ -1,5 +1,5 @@
 import React from "react"
-import clothes from '../../images/clothes.png'
+import clothes from '../../images/thread.png'
 import './Picture.scss'
 
 export default function Pictuer() {

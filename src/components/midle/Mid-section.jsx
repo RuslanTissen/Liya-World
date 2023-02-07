@@ -1,16 +1,16 @@
 import React from "react"
 import './Mid-section.scss'
-import img1 from '../../images/clothes.png'
-import img2 from '../../images/img-two.png'
 
-function MidSection() {
+function MidSection(props) {
+	let { title, text, image } = props
+
 	return (
 		<div className="section">
-			<img className="img1 img" src={img1} alt="" />
-			<img className="img2 img" src={img2} alt="" />
-			<img className="img3 img" src="" alt="" />
-			<img className="img4 img" src="" alt="" />
-			<img className="img5 img" src="" alt="" />
+			<div className="section-text">
+				<div className="title">{title} </div>
+				<div className="text">{text}</div>
+			</div>
+			<img className="img1 img" src={image} alt="image" />
 		</div>
 	)
 }
