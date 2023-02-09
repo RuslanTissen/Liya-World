@@ -1,23 +1,36 @@
 .nav{
-	max-width: fit-content;
 	height: fit-content;
 	background-color: rgb(247,148,29);
 	ul{
-		min-width: 100vw;
 		display: flex;
 		align-items: center;
 		list-style-type: none;
 		justify-content: space-around;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1.5em;
+		font-size: 2vw;
 		font-weight: 500;
+		 svg{
+			display: none;
+		}
 		.logo{
-			height: 50px;
-			width: 50px;
+			width: 5vw;
 			img{
 				width: 100%;
 				object-fit: contain;
 			}
 		}
+	}
+	@media (max-width:1200px) {
+		ul{
+			justify-content: space-between;
+			padding: 0 25px;
+			svg{
+				display: flex;
+				font-size: 3vw;
+			}
+		}
+		ul li:not(:first-child){
+			display: none;
+		}	
 	}
 }

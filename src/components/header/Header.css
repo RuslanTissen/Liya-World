@@ -1,28 +1,39 @@
 .nav {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgb(247, 148, 29);
 }
 .nav ul {
-  min-width: 100vw;
   display: flex;
   align-items: center;
   list-style-type: none;
   justify-content: space-around;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5em;
+  font-size: 2vw;
   font-weight: 500;
 }
+.nav ul svg {
+  display: none;
+}
 .nav ul .logo {
-  height: 50px;
-  width: 50px;
+  width: 5vw;
 }
 .nav ul .logo img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 1200px) {
+  .nav ul {
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  .nav ul svg {
+    display: flex;
+    font-size: 3vw;
+  }
+  .nav ul li:not(:first-child) {
+    display: none;
+  }
 }/*# sourceMappingURL=Header.css.map */
