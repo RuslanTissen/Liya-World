@@ -2,7 +2,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: rgb(247, 148, 29);
+  background-color: rgb(84, 84, 84);
 }
 .nav ul {
   display: flex;
@@ -10,14 +10,18 @@
   list-style-type: none;
   justify-content: space-around;
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
+  font-size: 1.5em;
   font-weight: 500;
+  color: white;
 }
-.nav ul svg {
+.nav ul a {
+  color: white;
+}
+.nav ul .menu {
   display: none;
 }
 .nav ul .logo {
-  width: 5vw;
+  width: 1.5em;
 }
 .nav ul .logo img {
   width: 100%;
@@ -29,9 +33,37 @@
     justify-content: space-between;
     padding: 0 25px;
   }
-  .nav ul svg {
+  .nav ul .menu {
+    width: 5vw;
     display: flex;
-    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5sec ease-in-out;
+  }
+  .nav ul .menu .menu-btn {
+    width: inherit;
+    height: 1vh;
+    background-color: white;
+    border-radius: 1vh;
+    transition: all 0.5sec ease-in-out;
+  }
+  .nav ul .menu .menu-btn::before,
+.nav ul .menu .menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 5vw;
+    height: 1vh;
+    background-color: white;
+    border-radius: 1vh;
+    transition: all 0.5sec ease-in-out;
+  }
+  .nav ul .menu .menu-btn::before {
+    transform: translateY(-16px);
+  }
+  .nav ul .menu .menu-btn::after {
+    transform: translateY(16px);
   }
   .nav ul li:not(:first-child) {
     display: none;

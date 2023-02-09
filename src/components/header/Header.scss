@@ -1,19 +1,23 @@
 .nav{
 	height: fit-content;
-	background-color: rgb(247,148,29);
+	background-color: rgb(84,84,84);
 	ul{
 		display: flex;
 		align-items: center;
 		list-style-type: none;
 		justify-content: space-around;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 2vw;
+		font-size: 1.5em;
 		font-weight: 500;
-		 svg{
+		color: white;
+		a{
+			color: white;
+		}
+		 .menu{
 			display: none;
 		}
 		.logo{
-			width: 5vw;
+			width: 1.5em;
 			img{
 				width: 100%;
 				object-fit: contain;
@@ -24,9 +28,39 @@
 		ul{
 			justify-content: space-between;
 			padding: 0 25px;
-			svg{
+			.menu{
+				width: 5vw;
+				// height: 4vh;
+				// background-color: black;
 				display: flex;
-				font-size: 3vw;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				cursor: pointer;
+				transition: all .5sec ease-in-out;
+				.menu-btn{
+					width: inherit;
+					height: 1vh;
+					background-color: white;
+					border-radius: 1vh;
+					transition: all .5sec ease-in-out;
+				}
+				.menu-btn::before,
+				.menu-btn::after{
+					content: '';
+					position: absolute;
+					width: 5vw;
+					height: 1vh;
+					background-color: white;
+					border-radius: 1vh;
+					transition: all .5sec ease-in-out;
+				}
+				.menu-btn::before{
+					transform: translateY(-16px);
+				}
+				.menu-btn::after{
+					transform: translateY(16px);
+				}
 			}
 		}
 		ul li:not(:first-child){
