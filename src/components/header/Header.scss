@@ -30,17 +30,16 @@
 			padding: 0 25px;
 			.menu{
 				width: 5vw;
-				// height: 4vh;
-				// background-color: black;
+				height: 1.5em;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				position: relative;
-				cursor: pointer;
+				cursor: pointer; 
 				transition: all .5sec ease-in-out;
 				.menu-btn{
-					width: inherit;
-					height: 1vh;
+					min-width: 2em;
+					height: .2em;
 					background-color: white;
 					border-radius: 1vh;
 					transition: all .5sec ease-in-out;
@@ -49,19 +48,32 @@
 				.menu-btn::after{
 					content: '';
 					position: absolute;
-					width: 5vw;
-					height: 1vh;
+					min-width: 2em;
+					height: .2em;
 					background-color: white;
 					border-radius: 1vh;
 					transition: all .5sec ease-in-out;
 				}
 				.menu-btn::before{
-					transform: translateY(-16px);
+					transform: translateY(-12px);
 				}
 				.menu-btn::after{
-					transform: translateY(16px);
+					transform: translateY(12px);
 				}
 			}
+			// .menu.open{
+			// 		.menu-btn{
+			// 		transform: translateX(-50px);
+			// 		background: transparent;
+			// 		box-shadow: none;
+			// 		}
+			// 		.menu-btn::before{
+			// 		transform: rotate(45deg) translate(35px, -35px);
+			// 		}
+			// 		.menu-btn::after{
+			// 		transform: rotate(-45deg) translate(35px, 35px);
+				// }
+			// }
 		}
 		ul li:not(:first-child){
 			display: none;
