@@ -10,7 +10,7 @@ function MidSection(props) {
 				<div className="title">{title} </div>
 				<div className="text">{text}</div>
 			</div>
-		<div className="img-cont"><img className="img1 img" src={image} alt="image" /></div>
+		<img className="img1 img" src={image} alt="image" ></img>
 		</div>
 	)
 }
