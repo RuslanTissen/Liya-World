@@ -17,56 +17,30 @@
 .nav ul a {
   color: white;
 }
-.nav ul .menu {
-  display: none;
-}
-.nav ul .logo {
+.nav .logo {
   width: 1.5em;
 }
-.nav ul .logo img {
+.nav .logo img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.nav svg {
+  display: none;
 }
 @media (max-width: 1200px) {
   .nav ul {
     justify-content: space-between;
     padding: 0 25px;
   }
-  .nav ul .menu {
-    width: 5vw;
-    height: 1.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    transition: all 0.5sec ease-in-out;
-  }
-  .nav ul .menu .menu-btn {
-    min-width: 2em;
-    height: 0.2em;
-    background-color: white;
-    border-radius: 1vh;
-    transition: all 0.5sec ease-in-out;
-  }
-  .nav ul .menu .menu-btn::before,
-.nav ul .menu .menu-btn::after {
-    content: "";
-    position: absolute;
-    min-width: 2em;
-    height: 0.2em;
-    background-color: white;
-    border-radius: 1vh;
-    transition: all 0.5sec ease-in-out;
-  }
-  .nav ul .menu .menu-btn::before {
-    transform: translateY(-12px);
-  }
-  .nav ul .menu .menu-btn::after {
-    transform: translateY(12px);
-  }
-  .nav ul li:not(:first-child) {
+  .nav .ul-first li:not(:first-child) {
     display: none;
   }
+  .nav svg {
+    display: inline-block;
+  }
+}
+.nav .ul-second {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=Header.css.map */
