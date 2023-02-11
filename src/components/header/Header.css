@@ -14,7 +14,7 @@
   font-weight: 500;
   color: white;
 }
-.nav ul a {
+.nav ul li a {
   color: white;
 }
 .nav .logo {
@@ -43,4 +43,9 @@
 .nav .ul-second {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .nav .ul-second {
+    display: none;
+  }
 }/*# sourceMappingURL=Header.css.map */

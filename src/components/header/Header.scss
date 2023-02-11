@@ -10,10 +10,7 @@
 		font-size: 1.5em;
 		font-weight: 500;
 		color: white;
-		a{
-			color: white;
-		}
-		}
+		li{ a {color: white;}}}
 		.logo{
 			width: 1.5em;
 			img{
@@ -21,12 +18,7 @@
 				object-fit: contain;
 			}
 		}
-		svg{
-			display: none;
-		}
-		// .ul-second{
-		// display: none;
-		// }
+		svg{display: none;}
 	@media (max-width:1200px) {
 		ul{
 			justify-content: space-between;
@@ -43,53 +35,9 @@
 		display: flex;
 		flex-direction: column;
 	}
+	@media (min-width: 1200px) {
+			.ul-second{
+		display: none;
+		}
+	}
 }
-
-
-
-// .menu{
-			// 	width: 5vw;
-			// 	height: 1.5em;
-			// 	display: flex;
-			// 	justify-content: center;
-			// 	align-items: center;
-			// 	position: relative;
-			// 	cursor: pointer; 
-			// 	transition: all .5sec ease-in-out;
-			// 	.menu-btn{
-			// 		min-width: 2em;
-			// 		height: .2em;
-			// 		background-color: white;
-			// 		border-radius: 1vh;
-			// 		transition: all .5sec ease-in-out;
-			// 	}
-			// 	.menu-btn::before,
-			// 	.menu-btn::after{
-			// 		content: '';
-			// 		position: absolute;
-			// 		min-width: 2em;
-			// 		height: .2em;
-			// 		background-color: white;
-			// 		border-radius: 1vh;
-			// 		transition: all .5sec ease-in-out;
-			// 	}
-			// 	.menu-btn::before{
-			// 		transform: translateY(-12px);
-			// 	}
-			// 	.menu-btn::after{
-			// 		transform: translateY(12px);
-			// 	}
-			// }
-			// .menu.open{
-			// 		.menu-btn{
-			// 		transform: translateX(-50px);
-			// 		background: transparent;
-			// 		box-shadow: none;
-			// 		}
-			// 		.menu-btn::before{
-			// 		transform: rotate(45deg) translate(35px, -35px);
-			// 		}
-			// 		.menu-btn::after{
-			// 		transform: rotate(-45deg) translate(35px, 35px);
-				// }
-			// }

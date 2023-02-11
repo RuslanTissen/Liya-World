@@ -39,7 +39,6 @@ function Header() {
 				<li className="adress"><a href="#">ADRESS</a></li>
 				<li className="about"><a href="#">ABOUT</a></li>
 				<GiHamburgerMenu style={{ fontSize: "1.5em" }} onClick={() => setShow(!show)} />
-				{/* <div onClick={() => handleClick} className="menu"><div className="menu-btn"></div></div> */}
 			</ul >
 			{show && <ul className='ul-second'>
 				<li className="pricing"><a href="#">PRICING</a> </li>
@@ -47,8 +46,6 @@ function Header() {
 				<li className="adress"><a href="#">ADRESS</a></li>
 				<li className="about"><a href="#">ABOUT</a></li>
 			</ul>}
-
-
 		</div>
 	)
 }
