@@ -18,7 +18,7 @@ function App() {
 			<MidSection title={"Pricing"} text={<LoremIpsum avgWordsPerSentence={3} />} image={img1} />
 			<MidSection title={"Open Time"} text={<LoremIpsum avgWordsPerSentence={5} />} image={img2} />
 			<MidSection title={"Adress"} text={<LoremIpsum avgWordsPerSentence={1} />} image={img3} />
-			<MidSection title={"About"} text={<LoremIpsum />} image={img4} />
+			<MidSection id={"about"} title={"About"} text={<LoremIpsum />} image={img4} />
 			<Footer />
 		</div>
 	);

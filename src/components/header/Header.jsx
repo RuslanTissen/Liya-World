@@ -37,14 +37,14 @@ function Header() {
 				<li className="pricing"><a href="#">PRICING</a> </li>
 				<li className="time"><a href="#">OPEN TIME</a></li>
 				<li className="adress"><a href="#">ADRESS</a></li>
-				<li className="about"><a href="#">ABOUT</a></li>
+				<li className="about"><a href="#about">ABOUT</a></li>
 				<GiHamburgerMenu style={{ fontSize: "1.5em" }} onClick={() => setShow(!show)} />
 			</ul >
 			{show && <ul className='ul-second'>
 				<li className="pricing"><a href="#">PRICING</a> </li>
 				<li className="time"><a href="#">OPEN TIME</a></li>
 				<li className="adress"><a href="#">ADRESS</a></li>
-				<li className="about"><a href="#">ABOUT</a></li>
+				<li className="about"><a href="#about">ABOUT</a></li>
 			</ul>}
 		</div>
 	)
