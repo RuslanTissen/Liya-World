@@ -4,7 +4,7 @@ import './Picture.scss'
 
 export default function Pictuer() {
 	return (
-		<div className="picture">
+		<div id="foto" className="picture">
 			<div className="picture-container">
 				<img src={clothes} alt="" />
 			</div>

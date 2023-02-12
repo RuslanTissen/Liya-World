@@ -9,16 +9,17 @@ import img2 from './images/time.jpg';
 import img3 from './images/adress.jpg';
 import img4 from './images/about.jpg';
 
-
 function App() {
+const about = document.getElementsByClassName('')
+
 	return (
 		<div className="app">
 			<Header />
 			<Pictuer />
-			<MidSection title={"Pricing"} text={<LoremIpsum avgWordsPerSentence={3} />} image={img1} />
-			<MidSection title={"Open Time"} text={<LoremIpsum avgWordsPerSentence={5} />} image={img2} />
-			<MidSection title={"Adress"} text={<LoremIpsum avgWordsPerSentence={1} />} image={img3} />
-			<MidSection id={"about"} title={"About"} text={<LoremIpsum />} image={img4} />
+			<div id={'pricing'} ><MidSection title={"Pricing"} text={<LoremIpsum avgWordsPerSentence={3} />} image={img1} /></div>
+			<div id={'open-time'} ><MidSection title={"Open Time"} text={<LoremIpsum avgWordsPerSentence={5} />} image={img2} /></div>
+			<div id={'adress'}><MidSection  title={"Adress"} text={<LoremIpsum avgWordsPerSentence={1} />} image={img3} /></div>
+			<div id={"about"}><MidSection title={"About"} text={<LoremIpsum />} image={img4} /></div>
 			<Footer />
 		</div>
 	);
